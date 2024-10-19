@@ -7,7 +7,10 @@ Original file is located at
     https://colab.research.google.com/drive/1_JNmCqQyjAZnYX6m1paxyMj2h_g7IK-g
 """
 
-!pip install streamlit babel pandas seaborn plotly matplotlib numpy datetime streamlit folium streamlit-folium geopandas streamlit-echarts
+from google.colab import files
+uploaded = files.upload()
+
+!pip install -r requirements.txt
 
 from google.colab import drive
 drive.mount('/content/googledrive')
